@@ -29,14 +29,13 @@ const accessMap = {
 
 const input = prompt("Ni supaya ko tak tengok orang punya, Enter your 4 IC last digits:");
 
-if (accessMap[input]) {
-    sessionStorage.setItem("allowedPage", accessMap[input]);
-    alert("Okay masuk masuk");
-    window.location.href = accessMap[input];
-} else {
-    alert("HAH try orang punya ehh?, try again");
-    window.location.href = "special.html";
-}
+if (accessMap[input]) { 
+    sessionStorage.setItem("allowedPage", accessMap[input]); 
+    alert("Okay masuk masuk"); window.location.href = accessMap[input]; } 
+else { 
+    alert("HAA try orang punya ehh? try again");
+    window.location.href = "special.html"; 
+    }
 </script> 
 
 </body>
