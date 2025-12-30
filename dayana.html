@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "dayana.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Dayana</h2>
+<div class="box">
+<p>Hai Dayana, sihat? Aku mulakan dengan permohonan maaf sebab perangai aku, sifat aku. Aku sedar dan aku tahu salah aku kat kau, benda yang aku dah buat, aku cuma harapkan belas kasihan supaya
+    kau maafkan aku. Aku tahu aku tak layak untuk dimaafkan, tapi aku harap kau boleh terima permohonan maaf aku ni. For the last, semoga kau happy selalu, sihat selalu, dan berjaya dalam apa jua yang kau lakukan. 
+    Amin. Harap masa depan yang cerah menanti kau. Take care Dayana.
+</p>
+</div>
+<p>Any message for me?
+<br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+  
+    <input type="hidden" name="name" value="Dayana">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form><br>
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>

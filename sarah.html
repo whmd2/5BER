@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "sarah.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Sarah</h2>
+<div class="box">
+<p>Hai Sarah, how's your life now? Semoga happy selalu. Aku minta maaf semaaf-maafnya dekat kau atas semuanya, aku hancurkan hidup kau, kebahagiaan kau. 
+    Aku tahu aku tak layak minta maaf, tapi aku harap kau boleh maafkan aku. Aku doakan kau bahagia selalu, dengan sesiapa pun. Aku doakan kau mampu kembali ke pangkal jalan.
+    Jaga diri baik-baik, okay? Jaga makan, jaga solat, jaga hubungan dengan Allah. Semoga kita menjadi diri kita yang terbaik. Aku selalu bawak kesalahan aku kemana aku pergi, 
+    supaya aku ingat dan aku tak nak ulang benda yang sama lagi. Goodluck in everything you do, Sarah. Semoga kau berjaya dalam hidup.
+</p>
+</div>
+<p>Any message for me?
+  <br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+
+    <input type="hidden" name="name" value="Sarah">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>

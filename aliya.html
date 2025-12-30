@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "aliya.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Aliya</h2>
+<div class="box">
+<p>Hai Aliya? macam mana life lepas SPM? just nak cakap terima kasih sebab jadi classmate aku. Kita memang tak borak sangat tapi aku kau ni baik, santai and tak kedekut senyuman. 
+    Semoga berjaya dalam hidup, hati-hati bawak motor tu jangan merempit sangat dengan Khayra, ingat keluarga kat rumah. All the best for your future.
+</p>
+</div>
+<p>Any message for me?
+  <br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+
+    <input type="hidden" name="name" value="Aliya">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>

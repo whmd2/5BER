@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "puteri.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Puteri</h2>
+<div class="box">
+<p>Hai Puteri, sihat tak? Aku just nak kata terima kasih banyak-banyak sepanjang kita jadi group untuk UBBM, kau banyak tolong aku sebenarnya. Kalau tanya aku, kau ni periang, murah senyum,
+    suka tolong orang gak senanya. Keep doing what you're doing, you'll be a great mankind. Goodluck untuk masa depan. Moga dapat apa yang kau impikan. Masa depan yang cerah menanti kau, percaya la.
+</p>
+</div>
+<p>Any message for me?
+  <br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+
+    <input type="hidden" name="name" value="Puteri">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>

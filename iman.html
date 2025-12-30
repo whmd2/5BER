@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "iman.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Iman</h2>
+<div class="box">
+<p>Hai Iman, sihat? lama tak jumpa kau. Sepanjang 2 tahun kita sekelas, tak pernah sekalipun aku rasa penat dengan lawak kau,
+  kalau kau tak ada, kelas tu sunyi je rasa, macam ada yang kurang. Terima kasih sebab selalu buat aku gelak, kadang waktu aku tengah down kau jugak lah yang buat aku happy balik. 
+  Harap kita boleh kekal kawan sampai bila-bila. Aku taknak lah sebab kita dah habis sekolah ni, kita jadi jauh pulak kan. Jaga diri baik-baik, semoga berjaya dalam apa jua yang kau buat nanti.
+</p>
+</div>
+<p>Any message for me?
+  <br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+  
+    <input type="hidden" name="name" value="Iman">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>

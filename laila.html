@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>5 Berlian Batch 08</title>
+    </head>
+    <body>
+      <div id="header"></div>
+        <h1>5 Berlian Batch 08</h1>
+        <nav class="top-nav" align="center">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="us.html">Us</a>
+  <a href="special.html">Special</a>
+</nav>
+<script>
+const allowedPage = sessionStorage.getItem("allowedPage");
+
+if (allowedPage !== "laila.html") {
+    alert("Access denied");
+    window.location.href = "verify.html";
+}
+</script>
+<h2>Laila</h2>
+<div class="box">
+<p>Hai Layl, how are you? may you always be blessed with happiness and success in life. 
+    Thank you for being in my life for these years, and for all the fun times we've shared together.
+    I hope we can be united again in the future. Stay strong and keep shining, Layl.
+    I always be here for you, anytime you need me, you know how to reach me. Im sorry for everything i've done to you, because of me your life is ruined. Just so you know im your number one supporter.
+    Dont worry about me, if i can take more than a month without you, a couple of years more is nothing.
+    I'll keep waiting for you, okay? even tho i know maybe you won't be back, but im here, always here. I'll update this massage every saturday night so you can come to read it, i know you wont
+    read it, but someday maybe you will. I love you Layl, always have and always will.
+</p>
+</div>
+<p>Any message for me?
+  <br>dw its anonymous
+</p>
+<nav align="center">
+  <form action="https://formspree.io/f/xgoepgqj" method="POST">
+  
+    <input type="hidden" name="name" value="Laila">
+
+    <textarea class="message-box" name="message" required></textarea>
+    <br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<a class="go" href="special.html">Back to Special</a>
+</nav>
+</body>
+</html>
